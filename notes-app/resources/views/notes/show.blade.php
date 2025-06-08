@@ -5,7 +5,7 @@
 @section('content')
     <div class="mb-3">
         <h2>{{ $note->title }}</h2>
-        <p><small>Criada em {{ $note->created_at->format('d/m/Y H:i') }}</small></p>
+        <p><small>Criada em {{ $note->created_at->setTimezone('America/Campo_Grande')->format('d/m/Y H:i') }}</small></p>
     </div>
 
     <div class="mb-4">
